@@ -8,11 +8,15 @@
 }
 
 body {
-    background: #0C151D;
+   background-color: var(--bs-body-bg);  
+   --bs-body-bg: #212529;
     font-family: "Platypi", serif;
     margin: 0;
     padding: 0;
     color: white;
+    --purple-black: #3d8ab4;
+    --purple-magenta: #a70094;
+    --text-light: #fff;
 }
 
 header {
@@ -150,6 +154,7 @@ nav {
 }
 
 .card-list {
+   
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -160,14 +165,14 @@ nav {
 }
 
 .card-item {
+    background-image: linear-gradient(90deg, var(--purple-black), var(--purple-magenta));
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     padding: 10px;
     width: 240px;
     text-decoration: none;
-    color: #333;
+    color: var(--text-light);
     transition: all 0.3s ease;
 }
 .card-item span {
@@ -186,10 +191,12 @@ nav {
 .card-item img {
     margin-bottom: 15px;
     max-width: 100%;
+    color: var(--text-light);
 }
 
 
 .card-item h3 {
+    color: var(--text-light);
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -197,7 +204,7 @@ nav {
 .card-item .arrow {
     margin-top: 10px;
     font-size: 18px;
-    color: #0056b3;
+    color: var(--text-light);
 
 }
 
