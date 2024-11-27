@@ -55,7 +55,8 @@ h4 {
 }
 
 .card-list {
-   
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
